@@ -36,43 +36,41 @@
             height: auto;
         }
 
-        /* RIGHE VIDEO */
-        .riga {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 10px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
+    /* RIGHE VIDEO */
+.riga {
+    display: flex;
+    align-items: flex-start; /* evita che le colonne scendano */
+    justify-content: center; /* centra tutte le colonne */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 20px; /* distanze regolari */
+}
 
-        .col {
-            flex: 1;
-            min-width: 250px;
-            padding: 20px;
-            text-align: center;
-            border: 2px solid #f87aff;
-            margin: 10px;
-            border-radius: 8px;
-            background: white;
-        }
+.col {
+    width: 280px;          /* larghezza fissa = righe sempre dritte */
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #f87aff;
+    border-radius: 8px;
+    background: white;
+}
 
-        .col img {
-            max-width: 100%;
-            height: auto;
-        }
+.col img {
+    max-width: 100%;
+    height: auto;
+}
 
-        .col a {
-            color: #f87aff;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-
+.col a {
+    color: #f87aff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
         /* IMMAGINE INIZIALE */
         .intro img,
         .foto-qr img {
@@ -222,6 +220,7 @@
 
 </body>
 </html>
+
 
 
 
